@@ -15,7 +15,7 @@ try:
      )
 
     mycursor = mydb.cursor()
-    mycursor.execute("SHOW DATABASES")
+    mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
     for x in mycursor:
         print(x)
